@@ -6,7 +6,6 @@ let userClickedPattern = [];
 let level = 0;
 
 $(document).one("keydown", nextSequence);
-$(document).one("click", nextSequence);
 $(".btn").click(handler);
 
 
@@ -65,8 +64,6 @@ function checkAnswer(currentLevel) {
     
     $("h1").text("Game Over. Press any key to restart.");
     $(document).one("keydown", startOver);
-    $(document).one("click", startOver);
-
   }
 
 }
