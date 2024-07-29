@@ -65,6 +65,7 @@ function checkAnswer(currentLevel) {
     
     $("h1").text("Game Over. Press any key to restart.");
     $(document).one("keydown", startOver);
+    $(document).one("click", startOver);
 
   }
 
