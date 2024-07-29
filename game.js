@@ -6,6 +6,7 @@ let userClickedPattern = [];
 let level = 0;
 
 $(document).one("keydown", nextSequence);
+$(document).one("click", nextSequence);
 $(".btn").click(handler);
 
 
